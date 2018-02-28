@@ -31,10 +31,10 @@ tools:context="com.example.john.weatherapp.WeatherActivity">
 
         android:layout_marginEnd="8dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="36dp"
         android:text="@string/temperature"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintHorizontal_bias="0.015"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cityName" />
 
@@ -43,10 +43,10 @@ tools:context="com.example.john.weatherapp.WeatherActivity">
         style="@style/Textbody_Gray"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
         android:text="FILLOUT"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tempHeader" />
 
@@ -55,10 +55,10 @@ tools:context="com.example.john.weatherapp.WeatherActivity">
         style="@style/Text_SubHeading_Black"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="28dp"
         android:text="@string/clouds"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintHorizontal_bias="0.013"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tempInfo" />
 
@@ -67,10 +67,9 @@ tools:context="com.example.john.weatherapp.WeatherActivity">
         style="@style/Textbody_Gray"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
         android:text="CLOUFINFO"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Clouds" />
 
@@ -86,10 +85,10 @@ tools:context="com.example.john.weatherapp.WeatherActivity">
         android:text="@string/wind"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.026"
+        app:layout_constraintHorizontal_bias="0.013"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cloudInfo"
-        app:layout_constraintVertical_bias="0.342" />
+        app:layout_constraintVertical_bias="0.181" />
 
     <TextView
         android:id="@+id/windinfo"
@@ -101,10 +100,10 @@ tools:context="com.example.john.weatherapp.WeatherActivity">
         android:text="WINDINFO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Wind"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintVertical_bias="0.034" />
 
 
 </android.support.constraint.ConstraintLayout>

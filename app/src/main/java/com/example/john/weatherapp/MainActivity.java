@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         try {
                 if (weatherHandler.setCountry(cityname_INPUT)) {
 
-                    // clarifying what I do here, for readability
+                    //I am creating these for readability
                     CharSequence cityname  = weatherHandler.getCityName();
                     CharSequence tempInfo  = weatherHandler.getTempInfo();
                     CharSequence cloudInfo = weatherHandler.getCloudInfo();

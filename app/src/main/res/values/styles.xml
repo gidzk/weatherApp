@@ -13,7 +13,24 @@
 
 
 
-    <!-- ================ TEXTSTYLES =================== -->
+    <style name="buttonStyle">
+
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">verdana</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+
+
+
+
+
+
+    <!-- ============= STRING STYLES ============== -->
+
+
     <style name="Textbody_Black">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
@@ -28,20 +45,6 @@
 
 
 
-    <style name="buttonStyle">
-
-        <item name="android:textSize">20sp</item>
-        <item name="android:fontFamily">verdana</item>
-        <item name="android:textColor">@color/white</item>
-        <item name="android:textStyle">bold</item>
-
-    </style>
-
-
-
-
-
-    <!-- ============= STRING STYLES ============== -->
 
 
     android:background="@android:color/holo_green_light"
@@ -62,7 +65,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:gravity">left</item>
-        <item name="android:textSize">30sp</item>
+        <item name="android:textSize">20sp</item>
         <item name="android:textColor">@color/colortext_dark</item>
         <item name="android:textStyle">bold</item>
     </style>
@@ -72,6 +75,7 @@
 
     <style name="Textbody_Gray_FAT" parent="@style/Textbody_Gray">
         <item name="android:textStyle">bold</item>
+        <item name="fontFamily">verdana</item>
 
 
 
@@ -83,8 +87,8 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:gravity">left</item>
-        <item name="android:textSize">20sp</item>
-        <item name="android:fontFamily">arial</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">verdana </item>
         <item name="android:textColor">@color/colortext_gray</item>
         <item name="android:lineSpacingExtra">5dp</item>
 
