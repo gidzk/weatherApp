@@ -19,7 +19,7 @@ public class WeatherActivity extends AppCompatActivity {
         setContentView(R.layout.activity_display_weather);
         initTextViews();
 
-        ArrayList<String> weatherinfo = (ArrayList<String>) getIntent().getSerializableExtra("mylist");
+        ArrayList<String> weatherinfo = (ArrayList<String>) getIntent().getSerializableExtra(CONSTANTS.BUNDLE_KEY);
 
         setTexts(weatherinfo);
 

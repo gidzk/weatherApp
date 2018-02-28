@@ -22,6 +22,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     WeatherHandler weatherHandler;
     Button forecastButton;
 
+
+    /**
+     * sets up all the widgets, and sets the applications main thread to non-strict mode
+     * which enables internet acess.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,13 +36,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         forecastButton.setOnClickListener(this);
         weatherHandler = WeatherParser.getInstance();
 
+
+
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
 
 
     }
 
-
+    /**
+     *
+     * when button is clicked, gets all the data from the model, and sends it to next Activity
+     */
     @Override
     public void onClick(View view) {
         String cityname_INPUT = textInput.getText().toString();
@@ -60,26 +70,35 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     weatherInfo.add(cloudInfo.toString());
                     weatherInfo.add(windInfo.toString());
 
-                    intent.putExtra("mylist", weatherInfo);
+                    intent.putExtra(CONSTANTS.BUNDLE_KEY, weatherInfo);
                     startActivity(intent);
 
                 }else{
                     showToastError();
-                    System.out.println("ELSE STATEMENT");
             }
 
 
 
         } catch (APIException e) {
            showToastError();
-            System.out.println("CATCH STATEMENT");
         }
     }
 
 
 
 
+private void getCityNames(){
 
+
+
+
+}
+
+
+    /**
+     * used if APIexception / error is given
+     * handles the exception and gives the user a toast.
+     */
     private void showToastError(){
         Context context = getApplicationContext();
         CharSequence text = CONSTANTS.ERROR_TOAST;

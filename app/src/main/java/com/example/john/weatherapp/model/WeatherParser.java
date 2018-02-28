@@ -35,9 +35,7 @@ public class WeatherParser implements WeatherHandler {
 
         CurrentWeather cityContainer = openWeatherMap.currentWeatherByCityName(cityName);
         return cityContainer.getMainData().getTemp();
-
     }
-
 
     public static WeatherHandler getInstance() {
         if (singleton == null){
@@ -59,7 +57,6 @@ public class WeatherParser implements WeatherHandler {
         return (currentWeather.hasCityName());
 
     }
-
 
 
     /**
@@ -141,7 +138,6 @@ public class WeatherParser implements WeatherHandler {
         return trg.toString();
 
     }
-
     /**
      * @param * @param cityName city to be searched for
      * @return string with information on the current winddegree / windspeed of the city

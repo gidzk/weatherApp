@@ -8,8 +8,7 @@ import net.aksingh.owmjapis.api.APIException;
 
 public interface WeatherHandler {
 
-
-
+    
     public String getBaseWeatherInfo () throws APIException;
     public String getCityName        () throws APIException;
 
