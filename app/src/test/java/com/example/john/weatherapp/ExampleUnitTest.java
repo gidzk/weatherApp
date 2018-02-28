@@ -23,11 +23,6 @@ public class ExampleUnitTest {
 
        w = WeatherParser.getInstance();
 
-
-
-
-      //  owm = new OWM("bd650fca069330b6e8e745b64994dc7e");
-
     }
 
 
@@ -58,6 +53,9 @@ public class ExampleUnitTest {
             System.out.println("ERROR: WRONG INPUT");
 
         }
+
+
+
 
 
     }

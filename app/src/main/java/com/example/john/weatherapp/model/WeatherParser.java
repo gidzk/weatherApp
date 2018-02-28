@@ -12,13 +12,13 @@ public class WeatherParser implements WeatherHandler {
     private OWM openWeatherMap;
     private final String apiKey = "bd650fca069330b6e8e745b64994dc7e";
     private boolean isMetric;
-    private OWM.Unit tempUnit;
+    private OWM.Unit temperatureUnit;
     private static  WeatherHandler singleton;
     private CurrentWeather currentWeather;
 
     private WeatherParser() {
         isMetric = true;
-        tempUnit = OWM.Unit.METRIC;
+        temperatureUnit = OWM.Unit.METRIC;
         openWeatherMap = new OWM(apiKey);
         openWeatherMap.setUnit(OWM.Unit.METRIC);
 
@@ -84,7 +84,6 @@ public class WeatherParser implements WeatherHandler {
 
     }
 
-    // ------ public methods defined by interface -----------
 
     /**
      * @return string with information on the current temp/humidity of the city
@@ -141,19 +140,24 @@ public class WeatherParser implements WeatherHandler {
     /**
      * @param * @param cityName city to be searched for
      * @return string with information on the current winddegree / windspeed of the city
+     *
+     * if no information avaviable, appends no information string.
+
      */
     @Override
     public String getWindInfo() throws APIException {
 
         StringBuilder trg = new StringBuilder();
         trg.append("Speed: ");
-
+        // checks that the speed exists, if not
         if(currentWeather.component13().hasSpeed()) {
             double windSpeed = currentWeather.component13().component1();
             trg.append(windSpeed).append(" meters per second \n");
         }
 
         else  trg.append("No weatherspeed data available \n");
+
+
         trg.append("Windangle /degree: ");
 
         trg.append(currentWeather.getWindData().component2()).append("° \n");

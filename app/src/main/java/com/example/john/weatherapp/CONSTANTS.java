@@ -6,8 +6,9 @@ package com.example.john.weatherapp;
 
 public class CONSTANTS {
 
+
     public static CharSequence ERROR_TOAST = "Your city input is not valid, try another one";
-    public static String BUNDLE_KEY       = "weatherInfo";
+    public static String BUNDLE_KEY        = "weatherInfo";
 
 
 
