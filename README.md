@@ -10,21 +10,21 @@ I hope the code is readable enough, I really had to hurry to finish this project
 
 
 
-##Problems I encountered during development:
+**Problems I encountered during development:**
   - I had no Idea the main thread did not allow for getting online and fetching information from a server\database. The solution I used     might be seen as a bit of a hack, explicitly telling the thread to go online instead of creating another one that did it. I needed a      quick solution, and learned a little thing on the go.
 
 
 
 
 
-##Android specific things I want to add:
+**Android specific things I want to add:**
   - More use of MVC pattern, as it is right now I have the business logic in the Activities.
   - Use of Fragments.
   - I have not used any log messages for debugging/ future development, no LogCat for me.
 
 
 
-##Things I wanted to add to the app:
+**Things I wanted to add to the app:**
   - Being able to change units, using a State Pattern
   - More modularity to the app, so the user can choose what to see.
   - add more private methods to for readability of the business logic.
@@ -33,7 +33,7 @@ I hope the code is readable enough, I really had to hurry to finish this project
   - More structured styles and fonts in the values folder.
   - More structured javadoc/ documentation (sorry if it's a mess).
   
-##Things I did think of during development
+**Things I did think of during development**
   - The API I used had exceptional tools for error handling, so I think I managed to catch exceptions and give user a Toast if their input      is bad
   - I used Stringbuilder for efficiency when parising my strings for a little bit of efficiency. 
   - Although I want more tests, I was aware of the bugs and ran those few I had quite a lot. I also did alot of top-down testing from       the Android simulator. 
