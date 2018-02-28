@@ -1,6 +1,6 @@
 # weatherApp
 
-I am quite new to Android Development, but thought it might be fun and a bit of a challenge to try to create this work-test in Android environment. But since I have yet to learn a few of the android features, a more experienced developer might sneer at this. But hey, I tried my best!
+I am quite new to Android Development, but thought it might be fun and a bit of a challenge to try to create this work-test in Android environment. But since I have yet to learn a few of the android features, a more experienced developer might sneer at this. But hey, I tried my best! Some parts of the code is instancing unessecary objects for readability, hope that helps
 
 I hope the code is readable enough, I really had to hurry to finish this project.
 
