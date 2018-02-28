@@ -1,0 +1,80 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+    </style>
+
+
+
+
+
+    <!-- ================ TEXTSTYLES =================== -->
+    <style name="Textbody_Black">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:fontFamily">courier</item>
+        <item name="android:textColor">@color/colortext_dark</item>
+        <item name="android:lineSpacingExtra">5dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+
+
+    <style name="buttonStyle">
+
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">verdana</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+
+
+
+    <!-- ============= STRING STYLES ============== -->
+
+    <!-- Gray text header,centered -->
+    <style name="Text_Heading_Black">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:gravity">center_horizontal</item>
+    <item name="android:textSize">40sp</item>
+    <item name="android:fontFamily">aileron</item>
+    <item name="android:textColor">@color/colortext_dark</item>
+    <item name="android:lineSpacingExtra">10dp</item>
+    </style>
+
+
+    <style name="Text_SubHeading_Black" parent="Text_Heading_Black">
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/colortext_dark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+<!-- ============= TEXTBODY STYLES =========== -->
+
+    <style name="Textbody_Gray">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">verdana</item>
+        <item name="android:textColor">@color/colortext_gray</item>
+        <item name="android:lineSpacingExtra">5dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+
+</resources>
