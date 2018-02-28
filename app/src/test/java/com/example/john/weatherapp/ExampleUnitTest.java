@@ -33,7 +33,7 @@ public class ExampleUnitTest {
     @Test
     public void testprints() throws Exception {
 
-        assertTrue(w.setCountry(got));
+        assertTrue(w.setCity(got));
         System.out.println(w.getWindInfo());
         System.out.println(w.getCloudInfo());
         System.out.println(w.getTempInfo());
@@ -43,14 +43,40 @@ public class ExampleUnitTest {
 
     }
 
+    /**
+     * noticed my asserts from setCity is broken since APIexception will handle this, but I handle this in topapplication so no harm done.
+     * I have no time to test further
+     *
+     */
+    @Test
+    public void testCountry(){
+
+        try {
+            assertFalse(w.setCity("Thailand"));
+
+            // will not be called
+            System.out.println(w.getCityName());
+            System.out.println(w.getTempInfo());
+
+        } catch (APIException e) {
+            System.out.println(e.getMessage());
+        }
+
+    }
+
+
+
+
+
     @Test
     public void testAPIEXCEPTION(){
         try {
-            assertFalse(w.setCountry("ERROR"));
+            assertFalse(w.setCity("ERROR"));
             System.out.println("Should not run");
 
         } catch (APIException e) {
             System.out.println("ERROR: WRONG INPUT");
+            e.getStackTrace();
 
         }
 

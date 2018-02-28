@@ -53,17 +53,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String cityname_INPUT = textInput.getText().toString();
 
         try {
-                if (weatherHandler.setCountry(cityname_INPUT)) {
+                if (weatherHandler.setCity(cityname_INPUT)) {
 
-                    //I am creating these for readability
+                    //--These are for readability--
                     CharSequence cityname  = weatherHandler.getCityName();
                     CharSequence tempInfo  = weatherHandler.getTempInfo();
                     CharSequence cloudInfo = weatherHandler.getCloudInfo();
                     CharSequence windInfo  = weatherHandler.getWindInfo();
-
+                    //----------------------------
 
                     Intent intent = new Intent(this,WeatherActivity.class);
 
+                    //--These are for readability--
                     ArrayList<String> weatherInfo = new ArrayList<String>();
                     weatherInfo.add(cityname.toString());
                     weatherInfo.add(tempInfo.toString());

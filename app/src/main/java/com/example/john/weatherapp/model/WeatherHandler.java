@@ -18,7 +18,7 @@ public interface WeatherHandler {
     public String getTempInfo   () throws APIException;
 
 
-    public boolean setCountry(String country) throws APIException;
+    public boolean setCity(String country) throws APIException;
 
 
 }

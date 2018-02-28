@@ -2,12 +2,9 @@
 
 I am quite new to Android Development, but thought it might be fun and a bit of a challenge to try to create this work-test in Android environment. But since I have yet to learn a few of the android features, a more experienced developer might sneer at this. But hey, I tried my best! Some parts of the code is instancing unessecary objects for readability, hope that helps
 
-I hope the code is readable enough, I really had to hurry to finish this project.
+The app is not optimized for different phones, but I hope that is ok. I tested the application on a Google Nexus virutual device and my Hueawei pro mate 9. So those two  devices do at least work.
 
-
-
-
-
+EDIT: I have noticed some bugs, like the paramenter "lol", and some countries wont't get caught in try/catch statment.
 
 
 **Problems I encountered during development:**
@@ -32,11 +29,11 @@ I hope the code is readable enough, I really had to hurry to finish this project
   - more tests, more use of test-driven development as it stands right now I mainly used prints to see what my output were as stub           tests.
   - More structured styles and fonts in the values folder.
   - More structured javadoc/ documentation (sorry if it's a mess).
-  
+
 **Things I did think of during development**
   - The API I used had exceptional tools for error handling, so I think I managed to catch exceptions and give user a Toast if their input      is bad
-  - I used Stringbuilder for efficiency when parising my strings for a little bit of efficiency. 
-  - Although I want more tests, I was aware of the bugs and ran those few I had quite a lot. I also did alot of top-down testing from       the Android simulator. 
+  - I used Stringbuilder for efficiency when parising my strings for a little bit of efficiency.
+  - Although I want more tests, I was aware of the bugs and ran those few I had quite a lot. I also did alot of top-down testing from       the Android simulator.
 
 
 
