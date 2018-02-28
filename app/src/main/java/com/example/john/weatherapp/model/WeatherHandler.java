@@ -1,4 +1,4 @@
-package com.example.john.weatherapp;
+package com.example.john.weatherapp.model;
 
 import net.aksingh.owmjapis.api.APIException;
 

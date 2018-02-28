@@ -2,19 +2,20 @@ package com.example.john.weatherapp;
 
 import android.content.Context;
 import android.content.Intent;
-import android.os.Handler;
 import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Editable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.john.weatherapp.model.WeatherHandler;
+import com.example.john.weatherapp.model.WeatherParser;
+
 import net.aksingh.owmjapis.api.APIException;
-import net.aksingh.owmjapis.core.OWM;
-import net.aksingh.owmjapis.demo.Main;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     EditText textInput;
@@ -44,14 +45,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         try {
                 if (weatherHandler.setCountry(cityname_INPUT)) {
 
-                    String cityname  = weatherHandler.getCityName();
-                    String cloudInfo = weatherHandler.getCloudInfo();
-                    String tempInfo  = weatherHandler.getTempInfo();
-                    String windInfo  = weatherHandler.getWindInfo();
+                    // clarifying what I do here, for readability
+                    CharSequence cityname  = weatherHandler.getCityName();
+                    CharSequence tempInfo  = weatherHandler.getTempInfo();
+                    CharSequence cloudInfo = weatherHandler.getCloudInfo();
+                    CharSequence windInfo  = weatherHandler.getWindInfo();
 
-                    System.out.println(cityname);
 
+                    Intent intent = new Intent(this,WeatherActivity.class);
 
+                    ArrayList<String> weatherInfo = new ArrayList<String>();
+                    weatherInfo.add(cityname.toString());
+                    weatherInfo.add(tempInfo.toString());
+                    weatherInfo.add(cloudInfo.toString());
+                    weatherInfo.add(windInfo.toString());
+
+                    intent.putExtra("mylist", weatherInfo);
+                    startActivity(intent);
 
                 }else{
                     showToastError();
@@ -67,9 +77,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
+
+
+
     private void showToastError(){
         Context context = getApplicationContext();
-        CharSequence text = ERRORMESSAGES.ERROR_TOAST;
+        CharSequence text = CONSTANTS.ERROR_TOAST;
         int duration = Toast.LENGTH_SHORT;
 
         Toast toast = Toast.makeText(context, text, duration);

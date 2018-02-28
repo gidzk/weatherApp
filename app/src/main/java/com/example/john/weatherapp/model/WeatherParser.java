@@ -1,4 +1,4 @@
-package com.example.john.weatherapp;
+package com.example.john.weatherapp.model;
 
 import net.aksingh.owmjapis.api.APIException;
 import net.aksingh.owmjapis.core.OWM;
@@ -8,7 +8,7 @@ import net.aksingh.owmjapis.model.CurrentWeather;
  * Created by John on 2018-02-27.
  */
 
-public class WeatherParser implements WeatherHandler{
+public class WeatherParser implements WeatherHandler {
     private OWM openWeatherMap;
     private final String apiKey = "bd650fca069330b6e8e745b64994dc7e";
     private boolean isMetric;
@@ -111,7 +111,7 @@ public class WeatherParser implements WeatherHandler{
 
 
         if(currentWeather.getMainData().hasHumidity())
-                trg.append("Humidity: ").append(currentWeather.getMainData().getHumidity()).append( "% \n");
+                trg.append("Humidity: ").append(currentWeather.getMainData().getHumidity()).append( "%\n");
         else    trg.append("No Humidity data available \n");
 
 

@@ -1,8 +1,10 @@
 package com.example.john.weatherapp;
 
+import com.example.john.weatherapp.model.WeatherHandler;
+import com.example.john.weatherapp.model.WeatherParser;
+
 import net.aksingh.owmjapis.api.APIException;
 import net.aksingh.owmjapis.core.OWM;
-import net.aksingh.owmjapis.model.CurrentWeather;
 
 import org.junit.Before;
 import org.junit.Test;

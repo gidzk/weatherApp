@@ -4,47 +4,103 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-tools:context="com.example.john.weatherapp.DisplayWeatherActivity">
+tools:context="com.example.john.weatherapp.WeatherActivity">
 
-
+<!-- The name of the city -->
     <TextView
-        android:id="@+id/cityView"
+        android:id="@+id/cityName"
         style="@style/Text_Heading_Black"
-        android:layout_width="373dp"
+        android:text="CITYNAME"
         android:layout_height="108dp"
         android:layout_marginEnd="5dp"
         android:layout_marginStart="6dp"
         android:layout_marginTop="8dp"
-        android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- The info regarding temp -->
     <TextView
         android:id="@+id/tempHeader"
         style="@style/Text_SubHeading_Black"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+
         android:layout_marginEnd="8dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
         android:text="@string/temperature"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintHorizontal_bias="0.061"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cityView" />
+        app:layout_constraintTop_toBottomOf="@+id/cityName" />
 
     <TextView
-        android:id="@+id/tempinfo"
+        android:id="@+id/tempInfo"
         style="@style/Textbody_Gray"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="TextView"
+        android:text="FILLOUT"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintHorizontal_bias="0.121"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tempHeader" />
+
+    <TextView
+        android:id="@+id/Clouds"
+        style="@style/Text_SubHeading_Black"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/clouds"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tempInfo" />
+
+    <TextView
+        android:id="@+id/cloudInfo"
+        style="@style/Textbody_Gray"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="CLOUFINFO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Clouds" />
+
+
+    <TextView
+        android:id="@+id/Wind"
+        style="@style/Text_SubHeading_Black"
+
+        android:layout_marginBottom="68dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/wind"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.026"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cloudInfo"
+        app:layout_constraintVertical_bias="0.342" />
+
+    <TextView
+        android:id="@+id/windinfo"
+        style="@style/Textbody_Gray"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="WINDINFO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Wind"
+        app:layout_constraintVertical_bias="0.1" />
+
+
 </android.support.constraint.ConstraintLayout>
